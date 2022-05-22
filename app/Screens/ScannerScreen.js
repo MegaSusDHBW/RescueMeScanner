@@ -78,9 +78,20 @@ async function decodeData(data){
   }
   if(scanned){
   return(
+
 <View>
+  <Text>Patient</Text>
   <Text>{email}</Text>
-  
+  <Text>{firstName}</Text>
+  <Text>{lastName}</Text>
+  <Text>{bloodGroup}</Text>
+  <Text>{organDonorState}</Text>
+  <Text>Notfallkontakt</Text>
+  <Text>{emergencyEmail}</Text>
+  <Text>{emergencyFirstName}</Text>
+  <Text>{emergencyLastName}</Text>
+  <Text>{emergencyBirthDate}</Text>
+  <Text>{emergencyPhone}</Text>
 </View>
   );  
   }
