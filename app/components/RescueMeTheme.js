@@ -100,6 +100,11 @@ export const RescueMeTheme = extendTheme({
                     color: Colors.textColorLight,
                 },
             },
+            variants: {
+                headline: {
+                    fontSize: '2xl',
+                },
+            },
         },
         View: {
             baseStyle: {

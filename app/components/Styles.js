@@ -49,6 +49,11 @@ module.exports = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
     },
+    flexCenter: {
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'center',
+    },
     textLeft: {
         textAlign: 'left',
     },
@@ -62,5 +67,9 @@ module.exports = StyleSheet.create({
     dividerBot: {
         borderBottomColor: Colors.primary,
         borderBottomWidth: 3,
+    },
+    center: {
+        flex: 1,
+        alignItems: 'center',
     },
 })
