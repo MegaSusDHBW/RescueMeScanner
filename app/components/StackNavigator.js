@@ -4,6 +4,7 @@ import { useColorMode } from 'native-base';
 import ScannerScreen from '../Screens/ScannerScreen';
 import { useFonts, Montserrat_600SemiBold } from '@expo-google-fonts/montserrat'
 import AppLoading from 'expo-app-loading';
+import LoginScreen from '../Screens/LoginScreen';
 
 
 const Stack = createStackNavigator();
@@ -21,8 +22,8 @@ function StackNavigator(props) {
     return (
         <Stack.Navigator _light={{ bg: "danger.600" }}
             _dark={{ bg: "danger.500" }}>
-            <Stack.Screen name="QR Code Scannen" component={ScannerScreen} options={{ headerShown: false, headerStyle: { backgroundColor: bgColor, }, headerTintColor: textColor, headerTitleStyle: { fontWeight: weight }, cardStyle: { backgroundColor: bgColor } }} />
-            <Stack.Screen name="data" component={ScannerScreen} options={{ headerShown: false, headerStyle: { backgroundColor: bgColor, }, headerTintColor: textColor, headerTitleStyle: { fontWeight: weight }, cardStyle: { backgroundColor: bgColor } }} />
+            <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false, headerStyle: { backgroundColor: bgColor, }, headerTintColor: textColor, headerTitleStyle: { fontWeight: weight }, cardStyle: { backgroundColor: bgColor } }} />
+            <Stack.Screen name="QRCode" component={ScannerScreen} options={{ headerShown: false, headerStyle: { backgroundColor: bgColor, }, headerTintColor: textColor, headerTitleStyle: { fontWeight: weight }, cardStyle: { backgroundColor: bgColor } }} />
         </Stack.Navigator>
     );
 }
